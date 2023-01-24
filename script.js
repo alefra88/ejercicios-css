@@ -1,0 +1,1 @@
+// todos los elementos que coincidan con el selector seràn modificados

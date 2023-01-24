@@ -1,0 +1,37 @@
+
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Todos los elementos que coincidan en el selector seràn modificados
+    Se pueden modificar diferentes elementos en un mismo selector, separandolos por comas
+*/
+h2, p { 
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+body {
+  font-family: ;
+}
+
+/* selector de clase */
+.title {
+  color: aqua;
+  font-size: 30px;
+  text-align: center;
+}
+.text {
+  border:2px solid #000;
+}
+/* Selector con ID */
+#subtema{
+  background-color: #000;
+  color: blueviolet;
+  text-align: center;
+  border: 3px solid red;
+}
