@@ -1,37 +1,67 @@
-
 /* Selector universal */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 /* Todos los elementos que coincidan en el selector seràn modificados
     Se pueden modificar diferentes elementos en un mismo selector, separandolos por comas
 */
-h2, p { 
-  color: red;
+h2,
+p {
+    color: red;
 }
 
 h1 {
-  color: blue;
+    color: blue;
 }
 
 body {
-  font-family: ;
+    font-family: ;
 }
 
 /* selector de clase */
 .title {
-  color: aqua;
-  font-size: 30px;
-  text-align: center;
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
 }
 .text {
-  border:2px solid #000;
+    border: 2px solid #000;
 }
 /* Selector con ID */
-#subtema{
-  background-color: #000;
-  color: blueviolet;
-  text-align: center;
-  border: 3px solid red;
+#subtema {
+    background-color: #000;
+    color: blueviolet;
+    text-align: center;
+    border: 3px solid red;
+}
+
+/* combinacion de selectores y herencias en css */
+.abuelo {
+    background-color: grey;
+    color: aqua;
+    border: 2px solid #000;
+}
+
+.padre1 > .nieto {
+  background-color: aliceblue;
+}
+/* cuando se ocupa este metodo de seleccion solo modifica el primer elemento que alcanza */
+.abuelo > .padre1 > h2 {
+  color: #000;
+  background-color: crimson;
+}
+
+/* combinador de hermano adyacente: se representa con un simbolo de '+' combina 2 selectores donde el segundo elemento debe ser un hermano adyacente del primero (solo aplica al elemento siguiente) */
+
+.cuadrado {
+  padding: 5px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+}
+/* combinando al hermano siguiente */
+input:checked + .cuadrado {
+  background-color: yellow;
 }
