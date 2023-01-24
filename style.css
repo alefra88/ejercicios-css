@@ -62,6 +62,12 @@ body {
   background-color: brown;
 }
 /* combinando al hermano siguiente */
-input:checked + .cuadrado {
+/* input:checked + .cuadrado {
+  background-color: yellow;
+} */
+
+
+/* COMBINADOR DE HERMANOS GENERALES */
+input:checked ~ .cuadrado {
   background-color: yellow;
 }
