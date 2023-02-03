@@ -71,3 +71,19 @@ body {
 input:checked ~ .cuadrado {
   background-color: yellow;
 }
+
+
+
+/* PSEUDOCLASES para formulario */
+.form-pseudoclases *:required{
+  background-color: antiquewhite;
+}
+
+.form-pseudoclases *:valid{}
+
+.form-pseudoclases *:invalid{}
+
+.form-pseudoclases *:focus {}
+
+.form-pseudoclases *:disabled{}
+
