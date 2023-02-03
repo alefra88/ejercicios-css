@@ -44,46 +44,64 @@ body {
 }
 
 .padre1 > .nieto {
-  background-color: aliceblue;
+    background-color: aliceblue;
 }
 /* cuando se ocupa este metodo de seleccion solo modifica el primer elemento que alcanza */
 .abuelo > .padre1 > h2 {
-  color: #000;
-  background-color: crimson;
+    color: #000;
+    background-color: crimson;
 }
 
 /* combinador de hermano adyacente: se representa con un simbolo de '+' combina 2 selectores donde el segundo elemento debe ser un hermano adyacente del primero (solo aplica al elemento siguiente) */
 
 .cuadrado {
-  padding: 5px;
-  margin: 5px;
-  width: 30px;
-  height: 30px;
-  background-color: brown;
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: brown;
 }
 /* combinando al hermano siguiente */
 /* input:checked + .cuadrado {
   background-color: yellow;
 } */
 
-
 /* COMBINADOR DE HERMANOS GENERALES */
 input:checked ~ .cuadrado {
-  background-color: yellow;
+    background-color: yellow;
 }
-
-
 
 /* PSEUDOCLASES para formulario */
-.form-pseudoclases *:required{
-  background-color: antiquewhite;
+.form-pseudoclases *:required {
+    background-color: antiquewhite;
 }
 
-.form-pseudoclases *:valid{}
+.form-pseudoclases *:valid {
+}
 
-.form-pseudoclases *:invalid{}
+.form-pseudoclases *:invalid {
+}
 
-.form-pseudoclases *:focus {}
+.form-pseudoclases *:focus {
+}
 
-.form-pseudoclases *:disabled{}
+.form-pseudoclases *:disabled {
+}
 
+/* cuando ya visitamos el enlace */
+.menu-pseudoclases a:visited {
+    color: olive;
+}
+/* cuando pasamos el cursor encima */
+.menu-pseudoclases a:hover {
+    color: orange;
+}
+
+.pseudoclase-parrafo:hover {
+    font-size: 20px;
+}
+
+#pseudoclase-target:target{
+  color: #000;
+  background-color: aquamarine;
+}

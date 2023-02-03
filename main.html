@@ -8,7 +8,7 @@
         <title>CSS en 30 dìas, tal vez menos</title>
     </head>
     <body>
-        <h1 class="title">Este es el dìa 1 del reto</h1>
+        <h1 class="title" id="pseudoclase-target">Este es el dìa 1 del reto</h1>
         <h2 class="title">Este dìa se aprende lo bàsico</h2>
         <p class="text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed optio
@@ -18,9 +18,9 @@
         </p>
         <h3 class="subtitle">Ejemplo de selectores combinados para css</h3>
         <div class="abuelo">
-          <h2>abuelo</h2>
+            <h2>abuelo</h2>
             <div class="padre1">
-              <h2>padre1</h2>
+                <h2>padre1</h2>
                 <div class="hijo">
                     <div class="nieto"></div>
                     <div class="nieto"></div>
@@ -39,17 +39,23 @@
             Esto es un h3 siendo seleccionado por ID en css
         </h3>
         <label for="check">Click Here!</label>
-        <input type="checkbox" name="name" id="check">
+        <input type="checkbox" name="name" id="check" />
         <div class="cuadrado"></div>
         <div class="cuadrado"></div>
         <div class="cuadrado"></div>
 
         <nav class="menu-pseudoclases">
-            <a href="#">Seccion 1</a>
-            <a href="#">Seccion 2</a>
-            <a href="#">Seccion 3</a>
-            <a href="#">Seccion 4</a>
-
+            <a href="#seccion1">Seccion 1</a>
+            <a href="#seccion2">Seccion 2</a>
+            <a href="#seccion3">Seccion 3</a>
+            <a href="#seccion4">Seccion 4</a>
+            <a href="#pseudoclase-target">Seleccionar titulo</a>
         </nav>
+        <p class="pseudoclase-parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            animi velit nisi distinctio pariatur officiis perferendis hic nulla
+            maiores mollitia incidunt eum, consequatur natus architecto eos
+            ipsam blanditiis reiciendis modi.
+        </p>
     </body>
 </html>
