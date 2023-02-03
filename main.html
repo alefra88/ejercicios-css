@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
         <title>CSS en 30 dìas, tal vez menos</title>
     </head>
     <body>
-        <h1 class="title">Este es el dìa 1 del reto</h1>
+        <h1 class="title" id="pseudoclase-target">Este es el dìa 1 del reto</h1>
         <h2 class="title">Este dìa se aprende lo bàsico</h2>
         <p class="text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed optio
@@ -18,9 +18,9 @@
         </p>
         <h3 class="subtitle">Ejemplo de selectores combinados para css</h3>
         <div class="abuelo">
-          <h2>abuelo</h2>
+            <h2>abuelo</h2>
             <div class="padre1">
-              <h2>padre1</h2>
+                <h2>padre1</h2>
                 <div class="hijo">
                     <div class="nieto"></div>
                     <div class="nieto"></div>
@@ -39,17 +39,68 @@
             Esto es un h3 siendo seleccionado por ID en css
         </h3>
         <label for="check">Click Here!</label>
-        <input type="checkbox" name="name" id="check">
+        <input type="checkbox" name="name" id="check" />
         <div class="cuadrado"></div>
         <div class="cuadrado"></div>
         <div class="cuadrado"></div>
 
         <nav class="menu-pseudoclases">
-            <a href="#">Seccion 1</a>
-            <a href="#">Seccion 2</a>
-            <a href="#">Seccion 3</a>
-            <a href="#">Seccion 4</a>
-
+            <a href="#seccion1">Seccion 1</a>
+            <a href="#seccion2">Seccion 2</a>
+            <a href="#seccion3">Seccion 3</a>
+            <a href="#seccion4">Seccion 4</a>
+            <a href="#pseudoclase-target">Seleccionar titulo</a>
         </nav>
+        <p class="pseudoclase-parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            animi velit nisi distinctio pariatur officiis perferendis hic nulla
+            maiores mollitia incidunt eum, consequatur natus architecto eos
+            ipsam blanditiis reiciendis modi.
+        </p>
+        <article>
+            <ol class="lista-pseudoclases">
+                <li>numero1</li>
+                <li>numero2</li>
+                <li>numero3</li>
+                <li>numero4</li>
+                <li>numero5</li>
+                <li>numero6</li>
+                <li>numero7</li>
+                <li>numero8</li>
+                <li>numero9</li>
+                <li>numero10</li>
+                <li>numero11</li>
+                <li>numero12</li>
+            </ol>
+        </article>
+        <article class="article-pseudoclases">
+            <header>esto es un header</header>
+            <p>parrafo parrafo yeah</p>
+            <div>un div</div>
+            <section>una section si</section>
+            <p>parrafito</p>
+            <div>div loco</div>
+            <footer>pie de pagina</footer>
+        </article>
+        <section>
+            <h2>PSEUDOELEMENTOS</h2>
+            <p>
+                <i>Bandai Myth Cloth Ex</i>
+                <span class="saga-geminis">Saga de Geminis</span
+                ><span class="saga-precio">500</span>
+            </p>
+            <p class="p-pseudoelementos">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro,
+                aut! Maxime praesentium reprehenderit illum omnis, architecto
+                quibusdam harum voluptatem est hic, velit id voluptates qui
+                mollitia quae! Id, sequi numquam.
+            </p>
+            <input
+                type="text"
+                class="input-pseudoelemento"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+            />
+        </section>
     </body>
 </html>

@@ -44,46 +44,164 @@ body {
 }
 
 .padre1 > .nieto {
-  background-color: aliceblue;
+    background-color: aliceblue;
 }
 /* cuando se ocupa este metodo de seleccion solo modifica el primer elemento que alcanza */
-.abuelo > .padre1 > h2 {
-  color: #000;
-  background-color: crimson;
-}
+/* .abuelo > .padre1 > h2 {
+    color: #000;
+    background-color: crimson;
+} */
 
 /* combinador de hermano adyacente: se representa con un simbolo de '+' combina 2 selectores donde el segundo elemento debe ser un hermano adyacente del primero (solo aplica al elemento siguiente) */
 
 .cuadrado {
-  padding: 5px;
-  margin: 5px;
-  width: 30px;
-  height: 30px;
-  background-color: brown;
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: brown;
 }
 /* combinando al hermano siguiente */
 /* input:checked + .cuadrado {
   background-color: yellow;
 } */
 
-
 /* COMBINADOR DE HERMANOS GENERALES */
 input:checked ~ .cuadrado {
-  background-color: yellow;
+    background-color: yellow;
 }
-
-
 
 /* PSEUDOCLASES para formulario */
-.form-pseudoclases *:required{
-  background-color: antiquewhite;
+.form-pseudoclases *:required {
+    background-color: antiquewhite;
 }
 
-.form-pseudoclases *:valid{}
+.form-pseudoclases *:valid {
+}
 
-.form-pseudoclases *:invalid{}
+.form-pseudoclases *:invalid {
+}
 
-.form-pseudoclases *:focus {}
+.form-pseudoclases *:focus {
+}
 
-.form-pseudoclases *:disabled{}
+.form-pseudoclases *:disabled {
+}
 
+/* cuando ya visitamos el enlace */
+.menu-pseudoclases a:visited {
+    color: olive;
+}
+/* cuando pasamos el cursor encima */
+.menu-pseudoclases a:hover {
+    color: orange;
+}
+
+.pseudoclase-parrafo:hover {
+    font-size: 20px;
+}
+
+#pseudoclase-target:target {
+    color: #000;
+    background-color: aquamarine;
+}
+
+/* PSEUDOCLASES POR POSICION */
+.lista-pseudoclases {
+    font-size: 30px;
+}
+
+/* primero */
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+/* ultimo */
+.lista-pseudoclases li:last-child {
+    color: pink;
+}
+
+/* elejimos el hijo */
+.lista-pseudoclases li:nth-child(3) {
+    color: navy;
+}
+/* podemos crear patrones de estilo */
+.lista-pseudoclases li:nth-child(4n) {
+    font-size: 40px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+    font-weight: bold;
+    background-color: azure;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+    color: turquoise;
+}
+
+/* toma el primer hijo que cumpla con la etiqueta */
+.article-pseudoclases p:first-child {
+    background-color: blueviolet;
+}
+
+/* Toma al primero en su tipo */
+.article-pseudoclases p:first-of-type {
+    background-color: blueviolet;
+    color: black;
+}
+
+/* toma al ultimo en su tipo */
+.article-pseudoclases p:last-of-type {
+    background-color: blueviolet;
+    color: white;
+}
+/* tambien hay nth */
+.article-pseudoclases footer:nth-of-type(1) {
+    background-color: green;
+    color: black;
+}
+
+/* pseudoclase de negacion */
+
+.article-pseudoclases *:not(p) {
+    background-color: blanchedalmond;
+}
+
+/* ***PSEUDOELEMENTOS*** */
+.saga-geminis::before {
+    content: "o((⊙﹏⊙))o";
+}
+
+.saga-geminis::after {
+    content: "(⊙o⊙)";
+}
+
+.saga-precio::before {
+    content: "( $ _ $ )";
+    font-weight: bold;
+}
+
+.saga-precio::after {
+    content: "ψ(｀∇´)ψ";
+    font-weight: bold;
+}
+
+/* primer letra en capital */
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* primer linea del parrafo */
+.p-pseudoelementos::first-line{
+    color: coral;
+}
+
+
+.p-pseudoelementos::selection{
+    background-color: black;
+    color: green;
+}
+
+.input-pseudoelemento::placeholder{
+    color: goldenrod;
+}
