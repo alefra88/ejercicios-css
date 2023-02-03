@@ -101,7 +101,67 @@ input:checked ~ .cuadrado {
     font-size: 20px;
 }
 
-#pseudoclase-target:target{
-  color: #000;
-  background-color: aquamarine;
+#pseudoclase-target:target {
+    color: #000;
+    background-color: aquamarine;
+}
+
+/* PSEUDOCLASES POR POSICION */
+.lista-pseudoclases {
+    font-size: 30px;
+}
+
+/* primero */
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+/* ultimo */
+.lista-pseudoclases li:last-child {
+    color: pink;
+}
+
+/* elejimos el hijo */
+.lista-pseudoclases li:nth-child(3) {
+    color: navy;
+}
+/* podemos crear patrones de estilo */
+.lista-pseudoclases li:nth-child(4n) {
+    font-size: 40px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+    font-weight: bold;
+    background-color: azure;  
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+    color: turquoise;
+}
+
+/* toma el primer hijo que cumpla con la etiqueta */
+.article-pseudoclases p:first-child{
+    background-color: blueviolet;
+}
+
+/* Toma al primero en su tipo */
+.article-pseudoclases p:first-of-type{
+    background-color: blueviolet;
+    color: black;
+}
+
+/* toma al ultimo en su tipo */
+.article-pseudoclases p:last-of-type{
+    background-color: blueviolet;
+    color: white;
+}
+/* tambien hay nth */
+.article-pseudoclases footer:nth-of-type(1){
+    background-color: green;
+    color: black;
+}
+
+/* TAMBIEN HAY UNA PSEUDOCLASE DE NEGACION */
+
+.article-pseudoclases *:not(p) {
+    background-color: blanchedalmond;
 }
