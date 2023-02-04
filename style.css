@@ -192,16 +192,34 @@ input:checked ~ .cuadrado {
 }
 
 /* primer linea del parrafo */
-.p-pseudoelementos::first-line{
+.p-pseudoelementos::first-line {
     color: coral;
 }
 
-
-.p-pseudoelementos::selection{
+.p-pseudoelementos::selection {
     background-color: black;
     color: green;
 }
-
-.input-pseudoelemento::placeholder{
+/* ESPECIFICIDAD */
+.input-pseudoelemento::placeholder {
     color: goldenrod;
+}
+blockquote#cita-marco.cita-marco{
+    background-color: lightsteelblue;
+}
+
+blockquote {
+    background-color: burlywood;
+}
+#cita-marco {
+    background-color: lightgreen;
+}
+blockquote.cita-marco {
+    background-color: tomato;
+}
+.cita-marco {
+    background-color: cornflowerblue;
+}
+blockquote#cita-marco{
+    background-color: lightsalmon;
 }
