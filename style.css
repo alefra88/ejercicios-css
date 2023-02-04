@@ -219,7 +219,18 @@ blockquote.cita-marco {
 }
 .cita-marco {
     background-color: cornflowerblue;
+    font-size: 32px;
 }
 blockquote#cita-marco{
     background-color: lightsalmon;
+}
+
+
+/* HERENCIA */
+/* bordes y color no se heredan */
+.cita-marco cite {
+    background-color: aqua;
+    background-color: inherit;
+    /* con initial cancelamos la herencia */
+    font-size: initial;
 }
