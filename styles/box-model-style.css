@@ -21,3 +21,20 @@ h1 {
     /* shorthand */
     border: 2px dashed blue;
 }
+
+
+/* PADDING MARGIN */
+.caja-1,
+.caja-2 {
+    background-color: chocolate;
+    border: medium solid orange;
+    /* padding y margin es un shorthand y aplica un valor a todos los lados sino se especifica */
+    padding: 20px;
+    margin: 40px;
+}
+
+/* en orden de las manecillas del reloj
+                        top
+                  left        right
+                        bottom
+*/
