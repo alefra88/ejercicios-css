@@ -1,0 +1,23 @@
+/* 
+box model es el modelo en el cual css ve a html, es decir como un caja con las siguientes propiedades:
+1.el contenido(content): el contenido el texto HTML,tomando en cuenta sus dimensiones(width y height)
+2. el borde(border):lo que delimita cada uno de los elementos de HTML
+3. el relleno (padding): son las distancias internas (la distancia del borde al contenido)
+4. el margen (margin): las distancias externas(la distancia entre el elemento HTML y sus elementos padres o hermanos)
+
+Dentro del modelo de caja debemos considerar que una caja contendrà 4 lados:
+1.Arriba(top)
+2.Abajo(bottom)
+3.Izquierda(left)
+4.Derecha(right)
+ */
+h1 {
+    /* bordes */
+    border-color: aqua;
+    border-width: 1px;
+    border-style: solid;
+    width: 400px;
+    height: 200px;
+    /* shorthand */
+    border: 2px dashed blue;
+}
