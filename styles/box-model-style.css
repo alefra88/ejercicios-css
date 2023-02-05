@@ -47,3 +47,37 @@ h1 {
     border: medium solid black;
     margin: 32px;
 }
+.caja-linea {
+    display: inline;
+}
+
+.caja-bloque {
+    display: block;
+}
+/*
+Propiedad Display:
+inline
+block
+inline-block-
+*/
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden {
+    background-color: greenyellow;
+    color: black;
+    width: 600px;
+    height: 300px;
+}
+
+.caja-linea-bloque {
+    display: inline-block;
+}
+
+.caja-none {
+    display: none;
+}
+/* visivility sirve para ocultar un elemento sin importar el espacio en la interfaz, ojo tambien se aplica para otras cosillas */
+.caja-hidden{
+    visibility: hidden;
+}
