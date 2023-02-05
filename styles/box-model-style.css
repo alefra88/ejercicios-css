@@ -78,6 +78,22 @@ inline-block-
     display: none;
 }
 /* visivility sirve para ocultar un elemento sin importar el espacio en la interfaz, ojo tambien se aplica para otras cosillas */
-.caja-hidden{
+.caja-hidden {
     visibility: hidden;
+}
+
+.overflow {
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+    /* por defecto */
+    overflow: visible;
+    /* ocultamos */
+    overflow: hidden;
+    /* aplicamos scroll */
+    overflow: scroll;
+    /* auto generamos las barras de desplazamiento en el lado que la necesite */
+    overflow: auto;
+    /* overflow-y: scroll;
+    overflow-x: scroll; */
 }
