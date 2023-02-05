@@ -157,4 +157,39 @@ html {
 }
 
 /* clearfix */
-/* compone el espacio flotado */
+.clearfix{
+    clear: both;
+}
+
+
+
+/* COLAPSO MARGENES VERTICALES */
+.margin-colapse {
+    background-color: skyblue;
+}
+/* los margenes verticales se acoplan */
+.margin-colapse section {
+    border: thin solid black;
+    /* solo usar margin-top o margin-bottom no ambos */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+/* en los margenes :horizontales se suman */
+.margin-colapse span {
+    display: inline-block;
+    margin-right: 16px;
+    border: thin solid black;
+    margin-left: 16px;
+}
+
+.sitio-web {
+    border: thin solid black;
+    background-color: thistle;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    text-align: center;
+    /* debemos usar en medida de lo posible margin-left y right en auto */
+    margin-left: auto;
+    margin-right: auto;
+}
