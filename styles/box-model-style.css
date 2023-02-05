@@ -1,4 +1,4 @@
-/* 
+/*
 box model es el modelo en el cual css ve a html, es decir como un caja con las siguientes propiedades:
 1.el contenido(content): el contenido el texto HTML,tomando en cuenta sus dimensiones(width y height)
 2. el borde(border):lo que delimita cada uno de los elementos de HTML
@@ -96,4 +96,49 @@ inline-block-
     overflow: auto;
     /* overflow-y: scroll;
     overflow-x: scroll; */
+}
+
+/* TAMAÑO DE CAJA */
+.box-sizing-content {
+    box-sizing: content-box;
+    background-color: blueviolet;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+}
+.box-sizing-border {
+    box-sizing: border-box;
+    background-color: blueviolet;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+}
+
+.container-col-3 {
+    background-color: burlywood;
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+.container-col-3 > * {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 10px;
+    border: thin solid red;
+    /* usamos una propiedad ya no recomendada */
+    float: left;
+}
+
+/* resetear el border-box por defecto */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
