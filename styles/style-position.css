@@ -1,0 +1,19 @@
+/* la propiedad position tiene 5 posibles valores
+-static (default)
+-relative
+-absolute
+-fixed
+-sticky
+
+para mover los elementos posicionados se activan las siguientes propiedades:
+-top(vertical-eje y)
+-bottom(vertical-eje y)
+-left(horizontal -eje x)
+-right(horizontal -eje x)
+-z-index(profundidad -eje z)
+
+la propiedad top y left tienen prioridad sobre right y bottom
+*/
+.links a {
+   margin: 32px;
+}
