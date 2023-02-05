@@ -22,7 +22,6 @@ h1 {
     border: 2px dashed blue;
 }
 
-
 /* PADDING MARGIN */
 .caja-1,
 .caja-2 {
@@ -38,3 +37,13 @@ h1 {
                   left        right
                         bottom
 */
+
+.caja-linea,
+.caja-bloque {
+    background-color: darkcyan;
+    width: 500px;
+    height: 250px;
+    padding: 16px;
+    border: medium solid black;
+    margin: 32px;
+}
