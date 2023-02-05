@@ -142,3 +142,19 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+/* FLOAT */
+.container-float {
+    background-color: cornflowerblue;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* clearfix */
+/* compone el espacio flotado */
