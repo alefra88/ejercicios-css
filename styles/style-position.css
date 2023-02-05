@@ -15,5 +15,33 @@ para mover los elementos posicionados se activan las siguientes propiedades:
 la propiedad top y left tienen prioridad sobre right y bottom
 */
 .links a {
-   margin: 32px;
+    margin: 32px;
+}
+
+.static {
+    background-color: yellow;
+    position: static;
+}
+
+/* en relative la caja se aleja de los margenes y respetan su lugar(posiciòn) */
+.relative {
+    background-color: aqua;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+}
+
+/* el elemento pierde sus dimensiones y posiciòn original en el flujo del documento. si se mueve puede tomar como referencia 2 elementos:
+1) ancestro con posicionamiento relativo
+2)sino se encuentra un ancestros relativo, se mueve respecto al documento HTML
+tenemos que darle las posiciones explicitamente */
+.absolute {
+    background-color: tomato;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    left: 0;
 }
