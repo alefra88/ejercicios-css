@@ -63,19 +63,61 @@ tenemos que darle las posiciones explicitamente */
 Para que este comportamiento funcione el elemento sticky debe ser hijo directo del body o su elemento contenedor debe tener dimensiones definidas y solo sera sticky dentro de las dimensiones de su contenedor padre
 */
 
-.sticky{
+.sticky {
     background-color: lightskyblue;
     position: sticky;
     top: 20px;
 }
 
-.sticky-parent{
+.sticky-parent {
     border: thin dotted black;
     height: 200px;
 }
 
-.sticky-child{
+.sticky-child {
     background-color: lightslategray;
     position: sticky;
     top: 65px;
+}
+
+/* Z-index nos permite controlar la profundidad del elemento, su valor por defecto es auto y acepta numeros positivos, negativos y cero.
+
+A mayor valor el elemento esta màs al frente a menor valor màs atràs
+
+Un elemento padre nunca podrà estar sobre sus elementos hijos, sin embargo los elementos hijos si pueden dàndoles un valor negativo
+*/
+.z-index-1,
+.z-index-2 {
+    background-color: mediumaquamarine;
+    border: thin solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    top: -200px;
+    left: 100px;
+    z-index: 2;
+}
+
+/* en el raro caso de que un elemento hijo este por detràs de un elemento padre se ocupa que el elemento padre no tenga zindex y el elemento hijo tenga zindex con valor negativo */
+.z-index-parent{
+    background-color: mediumorchid;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.z-index-child{
+    background-color: mediumvioletred;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 75px;
+    z-index: -1;
 }
