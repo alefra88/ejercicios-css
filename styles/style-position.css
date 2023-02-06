@@ -47,3 +47,35 @@ tenemos que darle las posiciones explicitamente */
 }
 
 /* fixed el elemento pierde sus dimenciones y posición original en el flujo del documento. si se mueve toma como referencia el documento html y queda fijo en la posición, cuando el scroll se mueva, el elemento no lo hará, queda fijo. */
+.fixed {
+    background-color: brown;
+    width: 300px;
+    height: 100px;
+    right: 20px;
+    bottom: 10px;
+    top: 30px;
+    left: 400px;
+    position: fixed;
+}
+
+/* posicionamiento sticky es una combinacion de posicionamineto relative y fixed, para este posicionamiento las propiedades top, left, right y bottom no mueven el elemento sino que sirven como punto de referencia, mientras no llegue a ese valor el elemento se comporta como relativa,cuando llega se convierte en fixed.
+
+Para que este comportamiento funcione el elemento sticky debe ser hijo directo del body o su elemento contenedor debe tener dimensiones definidas y solo sera sticky dentro de las dimensiones de su contenedor padre
+*/
+
+.sticky{
+    background-color: lightskyblue;
+    position: sticky;
+    top: 20px;
+}
+
+.sticky-parent{
+    border: thin dotted black;
+    height: 200px;
+}
+
+.sticky-child{
+    background-color: lightslategray;
+    position: sticky;
+    top: 65px;
+}
