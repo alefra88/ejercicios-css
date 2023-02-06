@@ -45,3 +45,5 @@ tenemos que darle las posiciones explicitamente */
     top: 0;
     left: 0;
 }
+
+/* fixed el elemento pierde sus dimenciones y posición original en el flujo del documento. si se mueve toma como referencia el documento html y queda fijo en la posición, cuando el scroll se mueva, el elemento no lo hará, queda fijo. */
