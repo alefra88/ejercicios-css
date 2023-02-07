@@ -1,6 +1,13 @@
+/* reset */
 html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 .header1 {
@@ -111,7 +118,6 @@ currentColor: hereda el valor por defecto asignado a la propiedad color del acen
     opacity: 0.5;
 }
 
-
 /* *** UNIDADES DE MEDIDA *** */
 /*
 Unidades de medida
@@ -133,5 +139,16 @@ em,rem,ex,ch -> al tamaño de la fuente
 *) vh -> alto del viewport va de 1- 100
 *) vmax -> entre vw y vh toma el que tenga mayor valor
 *) vmin -> entre vw y vh toma el que tenga menor valor
-
 */
+
+/* pixels */
+.pixels {
+    background-color: cadetblue;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border: thick solid rebeccapurple;
+    font-size: 20px;
+    font-family: sans-serif;
+    word-spacing: 1px;
+}
