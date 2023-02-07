@@ -63,8 +63,43 @@ html {
     border: thick solid rgb(128, 109, 7);
 }
 
+/* SISTEMA DE COLORES HSL HUGE-SATURATION-LIGHTNESS
+El primer valor es Hue (circulo cromatico)
+0· -> red
+60· -> yellow
+120· -> green
+180· -> cyan
+240· -> blue
+300· -> magenta
 
-/* SISTEMA DE COLORES HSL HUGE-SATURATION-LIGHTNESS */
-.color-hsl{
+el segundo valor es saturation(intensidad de color) se maneja por porcentajes:
+100% -> color puro
 
+el tercer valor es Lightness (la luminosidad del color):
+0% -> color negro
+50% -> color puro
+100% -> color blanco
+*/
+.color-hsl {
+    background-color: hsl(0, 100%, 50%);
+    background-color: hsla(
+        0,
+        100%,
+        50%,
+        0.5
+    ); /*Agregando el 'a' se aplica la opaciodad tambien es en porcentaje pero se maneja en decimales ejem, .5 === 50% */
+
+    color: #fff;
+    border: thick solid greenyellow;
+}
+
+/* CURRENT COLOR Y TRANSPARENT
+transparent === rgba(0,0,0,0)
+currentColor: hereda el valor por defecto asignado a la propiedad color del acentros que tenga definida esa propiedad, busca del ancestro màs cercano al màs alejado
+*/
+.color-trans-cur{
+  background-color: magenta;
+  background-color: currentColor;
+  background-color: transparent;
+  border: thick solid currentColor;
 }
