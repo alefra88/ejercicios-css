@@ -7,26 +7,64 @@ html {
     padding: 20px;
     height: 100px;
     background-color: beige;
-    
 }
 .links {
-  display: flex;  
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .links li {
     list-style: none;
     margin: 0 10px;
-    
 }
 .links li a {
     display: flex;
     padding: 16px;
     letter-spacing: 1px;
     font-weight: 300;
-    
 }
 .sticky-top {
     position: sticky;
     top: 0;
+}
+
+.color-by-name {
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid yellow;
+}
+
+/* RGB */
+/* CMYK */
+
+.color-hex {
+    background-color: #ff6600;
+    background-color: #ff660090; /*los ultimos dos digitos son la opacidad que van de 1 a 100 con el uso de 8 digitos y de 1 a 9 en el uso de 4 digitos*/
+    color: rebeccapurple;
+    border: thick solid #ffffff; /*ffffff es el extremo opuesto de 000000*/
+    border: thick solid #ff0000; /*Dependiendo de la posicion de ff es el color*/
+    border: thick solid #0f0; /*Se pueden simplificar a 3 digitos*/
+    border: thick solid #0000ff; /*Siempre y cuando sean el mismo par de digitos*/
+    border: thick solid #000000;
+}
+
+.color-rgb {
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 255);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* 'a' Agrega el canal alfa/opacidad que va de 0 a 100 xd*/
+    border: thick solid rgb(128, 109, 7);
+}
+
+
+/* SISTEMA DE COLORES HSL HUGE-SATURATION-LIGHTNESS */
+.color-hsl{
+
 }
