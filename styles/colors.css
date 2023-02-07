@@ -152,3 +152,16 @@ em,rem,ex,ch -> al tamaño de la fuente
     font-family: sans-serif;
     word-spacing: 1px;
 }
+
+/* Ems */
+.ems {
+    background-color: cadetblue;
+    border: thick solid rebeccapurple;
+    font-size: 24px;
+}
+
+.em-child {
+    background-color: salmon;
+    border: thick solid beige;
+    font-size: 2em; /*toma como referencia la base del contenedor padre en este caso '24px'*/
+}
