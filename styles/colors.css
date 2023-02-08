@@ -12,7 +12,7 @@ html {
     box-sizing: inherit;
 }
 
-body{
+body {
     background-color: beige;
     margin: 0;
 }
@@ -233,11 +233,9 @@ La altura se define por el tamaño del contenido
     margin: 20% 10%;
 }
 
-
-
 /* VIEWPORT */
 
-.viewport{
+.viewport {
     background-color: darkcyan;
     width: 50vw;
     /* recuerda que la etiqueta tiene margenes por defecto las barras de navegador tambien son parte del viewport */
@@ -248,14 +246,27 @@ La altura se define por el tamaño del contenido
     height: 100vw;
 }
 
-
 .v-min,
-.v-max{
+.v-max {
     background-color: darksalmon;
     width: 50vmax;
     height: 50vmin;
     border: thick solid fuchsia;
 }
 
+/* CUSTOM PROPS */
 
-/* CUANDO UTILIZAR CADA UNIDAD DE MEDIDA? */
+.custom-props-1 {
+    --primary-color: grey;
+    --font-size: 32px;
+    background-color: var(--primary-color);
+}
+
+.custom-props-3 {
+    font-size: var(--font-size);
+}
+
+.props-title {
+    --primary-color: navy;
+    color: var(--primary-color, orange);
+}
