@@ -11,7 +11,10 @@ html {
 *::before {
     box-sizing: inherit;
 }
-
+:root {
+    --default-backgroud-color: #000;
+    --default-color: #fff;
+}
 body {
     background-color: beige;
     margin: 0;
@@ -254,7 +257,11 @@ La altura se define por el tamaño del contenido
     border: thick solid fuchsia;
 }
 
-/* CUSTOM PROPS */
+/* CUSTOM PROPS
+Las custom properties solo existen en su contexto
+
+si quieremos que la variable exista en todos los elementos la definimos en el root, ya que por especificidad tiene mayor peso que html
+*/
 
 .custom-props-1 {
     --primary-color: grey;
@@ -269,4 +276,29 @@ La altura se define por el tamaño del contenido
 .props-title {
     --primary-color: navy;
     color: var(--primary-color, orange);
+}
+
+.ch-10 {
+    --padding-size: 2ch;
+    --num-ch: 10ch;
+    background-color: grey;
+    font-size: 2rem;
+    padding: var(--padding-size);
+    width: calc(var(--num-ch) + var(--padding-size) * 2);
+}
+
+/* los espacios son muy importantes en css */
+
+/* funciones min-max */
+.min-max {
+    background-color: var(--default-backgroud-color);
+    color: var(--default-color);
+    margin-top: 1rem;
+    /* width puede tener mas de dos valores */
+    width: min(300px, 20vw);
+    height: max(200px, 25vh);
+}
+
+html h1 {
+    font-size: clamp(2rem, 1rem + 3vw, 3rem);
 }
