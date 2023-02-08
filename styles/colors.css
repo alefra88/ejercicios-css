@@ -331,3 +331,22 @@ html h1 {
     /* el shorthand es, 'font: font-style font-variant font-weight font-size / line-height and font-family; respetando en orden siempre' */
     font: italic small-caps bold 24px / 1.5 monospace;
 }
+
+/* *** formato woff o woff2 - web open font format *** */
+@font-face {
+    font-family: chalet;
+    src: url("../assets/Chalet.woff") format("woff");
+    /* src: url("../assets/Chalet.woff") format("woff"),
+        url("../assets/Chalet.ttf") format("ttf"); */
+}
+@font-face {
+    font-family: pecita;
+    src: url("../assets/Pecita.woff") format("woff");
+}
+
+.pecita {
+    font-family: "pecita", "cursive";
+}
+.chalet {
+    font-family: "chalet", "sans-serif";
+}
