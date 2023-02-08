@@ -302,3 +302,32 @@ si quieremos que la variable exista en todos los elementos la definimos en el ro
 html h1 {
     font-size: clamp(2rem, 1rem + 3vw, 3rem);
 }
+
+/* FONTS */
+
+.par-font {
+    /* define el tipo de fuente */
+    font-family: sans-serif;
+    /* define el tamaño de fuente */
+    font-size: 32px;
+    /* es el peso tipografico
+    100 Thin
+200 Extra Light
+300 Light
+400 Normal
+500 Medium
+600 Semi Bold
+700 Bold
+800 Extra Bold
+900 Ultra Bold
+ */
+    font-weight: bolder;
+    /* el estilo de fuente */
+    font-style: italic;
+    /* capitaliza todo el texto a mayusculas */
+    font-variant: small-caps;
+    /* line-height === interlineado */
+    line-height: 2;
+    /* el shorthand es, 'font: font-style font-variant font-weight font-size / line-height and font-family; respetando en orden siempre' */
+    font: italic small-caps bold 24px / 1.5 monospace;
+}
