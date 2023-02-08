@@ -334,19 +334,86 @@ html h1 {
 
 /* *** formato woff o woff2 - web open font format *** */
 @font-face {
-    font-family: chalet;
+    font-family: "chalet";
     src: url("../assets/Chalet.woff") format("woff");
     /* src: url("../assets/Chalet.woff") format("woff"),
         url("../assets/Chalet.ttf") format("ttf"); */
+    font-display: swap;
 }
 @font-face {
-    font-family: pecita;
+    font-family: "pecita";
     src: url("../assets/Pecita.woff") format("woff");
+    font-display: swap;
 }
 
 .pecita {
     font-family: "pecita", "cursive";
+    font-size: 2rem;
 }
 .chalet {
     font-family: "chalet", "sans-serif";
+    font-size: 2rem;
+}
+
+/* FONT DISPLAY
+auto: muestra la fuente tan pronto como está disponible, pero permite la substitución temporal en caso de una lenta carga.
+
+block: muestra una fuente sustituta hasta que la fuente se haya descargado completamente.
+
+swap: muestra una fuente sustituta hasta que la fuente se haya descargado y validado completamente.
+
+fallback: muestra una fuente sustituta hasta que la fuente se haya descargado y validado completamente, y después muestra la fuente descargada.
+
+optional: muestra la fuente tan pronto como está disponible, pero permite la substitución temporal en caso de una lenta carga. Es equivalente a auto.
+*/
+
+/* TEXT STYLES
+text-align -> alinear texto
+text-decoration -> personaliza decoraciones de texto por defecto
+text-indent -> aplica sangrìas
+text-overflow -> manejamos el tipo de desbordamiento que queremos que tenga el texto
+text-transform -> la primer letra de cada palabra a mayuscula
+letter-spacing -> espaciado entre letras
+white-space -> nos dice que hacer con los espacios 'white-space:pre;' hace que respete los espacios
+word-break -> rompe las palabras dependiendo del espacio que tenga en en viewport
+word-spacing -> espaciado entre palabras
+writing-mode -> orientacion de escritura
+*/
+
+.text-style-1 {
+    background-color: blanchedalmond;
+    border: thin solid black;
+    padding: 1rem;
+    width: 50%;
+    font-size: 2rem;
+    text-align: right;
+    text-decoration: overline;
+    text-decoration: none;
+    text-indent: 3rem;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.text-overflow-ellipsis {
+    background-color: blanchedalmond;
+    border: thin solid black;
+    padding: 1rem;
+    width: 50%;
+    font-size: 2rem;
+    text-align: right;
+    text-decoration: overline;
+    text-decoration: none;
+    text-indent: 3rem;
+    /* debemos tener overflow:hidden y white-space:nonwrap para que funcione text-overflow */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.word-spacing {
+    word-spacing: 2rem;
+    writing-mode: vertical-lr;
 }
