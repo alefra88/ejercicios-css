@@ -3,6 +3,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    background-color: #000;
 }
 *,
 *::after,
@@ -11,9 +13,7 @@ html {
 }
 
 .header1 {
-    padding: 20px;
-    height: 100px;
-    background-color: beige;
+    background-color: rebeccapurple;
 }
 .links {
     display: flex;
@@ -22,13 +22,20 @@ html {
 }
 .links li {
     list-style: none;
-    margin: 0 10px;
 }
 .links li a {
+    color: #fff;
     display: flex;
     padding: 16px;
     letter-spacing: 1px;
     font-weight: 300;
+}
+
+.links li a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
 }
 .sticky-top {
     position: sticky;
@@ -185,7 +192,6 @@ Hace referencia al font-size de html,sino se ha expresado explicitamente se toma
     margin: 0.5rem;
 }
 
-
 /* EX en la altura*/
 .ex {
     background-color: cadetblue;
@@ -205,7 +211,18 @@ Hace referencia al font-size de html,sino se ha expresado explicitamente se toma
 /* CHs
 1 ch === 1 caracter
 */
-.chs{
+.chs {
     background-color: cadetblue;
     width: 10ch;
+}
+
+/* PORCENTAJES 
+La altura se define por el tamaño del contenido
+*/
+.percentages {
+    background-color: khaki;
+    width: 80%;
+    font-size: 100%;
+    padding: 5%;
+    margin: 20% 10%;
 }
