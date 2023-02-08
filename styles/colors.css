@@ -201,3 +201,11 @@ Hace referencia al font-size de html,sino se ha expresado explicitamente se toma
     padding: 1ex;
     margin: 0.5ex;
 }
+
+/* CHs
+1 ch === 1 caracter
+*/
+.chs{
+    background-color: cadetblue;
+    width: 10ch;
+}
