@@ -184,3 +184,20 @@ Hace referencia al font-size de html,sino se ha expresado explicitamente se toma
     padding: 1rem;
     margin: 0.5rem;
 }
+
+
+/* EX en la altura*/
+.ex {
+    background-color: cadetblue;
+    border: thick solid rebeccapurple;
+    padding: 1ex 0.5ex;
+    font-size: 24px;
+}
+
+.ex-child {
+    background-color: salmon;
+    border: thick solid beige;
+    font-size: 2ex;
+    padding: 1ex;
+    margin: 0.5ex;
+}
