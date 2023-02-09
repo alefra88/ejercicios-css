@@ -31,6 +31,8 @@
                     <li><a href="#propiedades">Propiedades</a></li>
                     <li><a href="#backgrounds">Backgrounds</a></li>
                     <li><a href="#imagenes">Imagenes</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                    <li><a href="#tablas">Tablas/Formularios</a></li>
                 </ul>
             </div>
         </header>
@@ -328,6 +330,86 @@
                     <h3>Doom tune</h3>
                 </article>
             </article>
+            <article id="listas">
+                <h2>Estilos de Listas</h2>
+                <ul class="list">
+                    <li>Primavera</li>
+                    <li>Verano</li>
+                    <li>Otoño</li>
+                    <li>Invierno</li>
+                </ul>
+                <ul class="list-2">
+                    <li>Primavera</li>
+                    <li>Verano</li>
+                    <li>Otoño</li>
+                    <li>Invierno</li>
+                </ul>
+                <ul class="list-3">
+                    <li>Primavera</li>
+                    <li>Verano</li>
+                    <li>Otoño</li>
+                    <li>Invierno</li>
+                </ul>
+                <h2>texto en columnas</h2>
+                <ol class="text-column-4">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                    <li>e</li>
+                    <li>f</li>
+                    <li>g</li>
+                    <li>h</li>
+                    <li>i</li>
+                    <li>j</li>
+                    <li>k</li>
+                    <li>l</li>
+                </ol>
+                <article class="text-col">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis consectetur aut neque mollitia reprehenderit,
+                        aliquid impedit placeat modi. Itaque soluta corrupti
+                        doloremque dolor! Temporibus aspernatur accusantium fuga
+                        nulla sit. Nostrum? Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Odio at ducimus provident
+                        totam sapiente. Laboriosam id nostrum sed placeat
+                        maiores suscipit voluptatum, aliquam excepturi dolorem
+                        natus aliquid quibusdam, beatae ipsa!
+                    </p>
+                </article>
+            </article>
+        </section>
+        <section id="tablas" class="tablas">
+            <h2>Tablas</h2>
+            <table class="table">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td></td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </section>
+        <section class="formularios">
+            <h2>Formularios</h2>
+            <form  class="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                  title="Nombre sólo acepta letras y espacios en blanco" required>
+                <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+                  title="Formato de correo inválido" required>
+                <textarea name="comentarios" cols="30" rows="10"  placeholder="Escribe tus comentarios" required></textarea>
+                <input type="submit">
+              </form>
         </section>
     </body>
 </html>

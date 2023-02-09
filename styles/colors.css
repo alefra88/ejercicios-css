@@ -601,7 +601,7 @@ en ese orden
     height: 400px;
 }
 
--imagenes .card img {
+.imagenes .card img {
     height: 300px;
     object-fit: fill;
     object-fit: cover;
@@ -609,4 +609,135 @@ en ese orden
     object-fit: contain;
     background-color: #ff0000;
     object-fit: none;
+}
+
+/* LISTAS */
+
+.list {
+    background-size: 2px 2px;
+    list-style-type: disc;
+    list-style-type: square;
+    list-style: circle;
+    list-style: lower-roman;
+    list-style: lower-greek;
+    list-style: decimal-leading-zero;
+    list-style: upper-latin;
+    list-style: armenian;
+    list-style: none;
+    list-style-image: none;
+}
+
+.list li::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../assets/face.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.list-2 li {
+    background-color: aqua;
+    /* viñeta por fuera */
+    list-style-position: outside;
+    /* viñeta por dentro */
+    list-style-position: outside;
+}
+
+.list-3 li {
+    color: wheat;
+    background-color: blue;
+    /* shorthand */
+    list-style: lower-greek inside;
+}
+/*Funciona para listas y textos*/
+.text-column-4 {
+    column-count: 4;
+    column-gap: 1rem;
+    column-rule: thin dotted red;
+    list-style-position: inside;
+    column-width: 100px; /*tamaño minimo de anchura de columnas*/
+}
+.text-col {
+    column-count: 4;
+    column-gap: 1rem;
+    column-rule: thin dotted red;
+    list-style-position: inside;
+    column-width: 100px;
+}
+
+/* TABLAS */
+.table {
+    font-size: 2rem;
+    /* aplicamos collapse para que no hay espacios entre tablas solo es exclusivo de table*/
+    /* border-collapse: collapse; */
+
+    /* esconde las celdas vacias */
+    empty-cells: hide;
+}
+
+.table,
+th,
+td {
+    border: thin solid blue;
+    /* border collapse y border epacing se excluyen entre ellas */
+    border-spacing: 100px;
+}
+
+/* FORMULARIOS */
+.contact-form {
+    --form-text-color: #666;
+    --form-success-color: #4caf50;
+    --form-error-color: #f44336;
+    --form-bg-color: #eee;
+    --form-border-color: #222;
+    --form-place-holder-color: #234;
+    background-color: var(--form-bg-color);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: thin solid var(--form-border-color);
+    padding: 1rem;
+}
+
+.contact-form > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    /* le da color al cursor */
+    caret-color: #0000ff;
+}
+
+.contact-form input[type="submit"] {
+    margin-bottom: 0;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--form-bg-color);
+    background-color: var(--form-success-color);
+}
+
+.contact-form > *::placeholder {
+    color: var(--form-place-holder-color);
+}
+.contact-form > *[required]:invalid {
+    border: thin solid var(--form-error-color);
+}
+
+.contact-form > *[required]:valid {
+    border: thin solid var(--form-success-color);
+}
+
+.contact-form input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.contact-form textarea {
+    resize: none;
 }
