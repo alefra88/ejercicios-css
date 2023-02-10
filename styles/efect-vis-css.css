@@ -1,0 +1,39 @@
+/* haciendo sticky el header y dandole estilo a los anchor */
+.container-links {
+    background-color: rebeccapurple;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.links li {
+    list-style: none;
+}
+.links li a {
+    color: #fff;
+    display: flex;
+    padding: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.links li a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+body h1 {
+    text-align: center;
+}
+/* alineando titulo primer sección */
+.efectos-visuales{
+    text-align: center;
+}
