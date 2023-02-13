@@ -203,7 +203,7 @@ main img {
 .slide {
   width: 100%;
   height: inherit;
-  background-color: #1e2345;
+  background-color: var(--clr-primary-1);
 
   scroll-snap-align: start;
   scroll-snap-align: none;
@@ -224,11 +224,11 @@ main img {
   justify-content: center;
   align-items: center;
   font-size: 3vw;
-  color: #d9e8f0;
+  color: var(--clr-grey-6);
 }
 
 .carousel {
-  border: thick solid #d938f0;
+  border: thick solid hsl(208, 60%, 60%);
   display: flex;
   width: 50%;
   height: 50vh;
@@ -245,7 +245,7 @@ main img {
   scroll-snap-type: inline mandatory;
   scroll-snap-type: both proximity;
 }
-
+/* para que el scroll-snap funcione el contenedor de las slides debe tener una anchura definida */
 .carousel-slide {
   display: flex;
   flex-direction: column;
@@ -263,7 +263,11 @@ main img {
 }
 
 .gradient-text {
-  background-image: linear-gradient(45deg, magenta, yellow);
+  background-image: linear-gradient(
+    45deg,
+    hsl(208, 100%, 20%),
+    hsl(208, 60%, 60%)
+  );
   -ms-background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
