@@ -1,0 +1,20 @@
+/* PROPIEDADES A MODIFICAR EN TRANSITION
+
+background-color: magenta;
+transition-property: background-color;
+transition-duration: 500ms;
+transition-timing-function: ease;
+transition-delay: 0.5s;
+
+            SHORTHAND
+transition: border-color 2s linear 1s;
+transition: all 2s ease-in-out 250ms;
+
+
+podemos usar el object position para dar efecto de movimiento a imagenes estaticas:
+
+transition: object-position 2s ease-in-out 3s;
+
+tenemos que determinar el punto departida y final para 'object-position'
+
+*/
