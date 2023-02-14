@@ -472,7 +472,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
 
 /* A N I M A T I O N S */
 
-@keyframes myAwesomeAnimation {
+/*@keyframes myAwesomeAnimation {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -483,7 +483,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
     transform: translateX(100%);
   }
 }
-
+*/
 .my-animation {
   /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
   animation-name: myAwesomeAnimation;
@@ -496,25 +496,26 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   animation-delay: 1500ms;
   animation-delay: 0;
   animation-iteration-count: 3;
-  animation-iteration-count: infinite;
   animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-direction: reverse;
+  /*
   animation-direction: alternate;
   animation-direction: alternate-reverse;
   animation-direction: normal;
-  animation-fill-mode: none;
+  animation-fill-mode: none; */
   /* Al final de la animación se queda con los estilos finales de la animación */
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
   /* Al inicio de la animación se queda con los estilos iniciales de la animación */
-  animation-fill-mode: backwards;
+  /* animation-fill-mode: backwards; */
   /* both aplica al mismo tiempo forwards y backwards */
-  animation-fill-mode: both;
-  animation-play-state: paused;
+  /* animation-fill-mode: both; */
+  /* animation-play-state: paused;
   animation-play-state: running;
   animation: myAwesomeAnimation 1s;
-  animation: myAwesomeAnimation 1.5s ease 250ms 7 alternate both running;
+  animation: myAwesomeAnimation 1.5s ease 250ms 7 alternate both running; */
 }
-
+ 
 @keyframes myAwesomeAnimation2 {
   0% {
     opacity: 0;
@@ -536,12 +537,12 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   }
 }
 
-.my-animation-2 {
+/* .my-animation-2 {
   animation: myAwesomeAnimation2 2s;
   animation: myAwesomeAnimation2 5s;
   animation: myAwesomeAnimation2 1s;
   animation: myAwesomeAnimation2 6s;
-}
+} */
 
 @keyframes multipleAnimation1 {
   0% {
@@ -637,7 +638,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
 .shake {
   font-size: 5vw;
   cursor: pointer;
-  display: inline-block;
+  display: inline-block; /*para que el efecto solo aplique el el contenido de la div*/
 }
 
 .shake:hover {
@@ -699,7 +700,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
-
+/*
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -843,9 +844,9 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   height: 3rem;
   cursor: pointer;
   /* opacity: 0.25; */
-  opacity: 0;
-}
-
+  /* opacity: 0;
+} */
+/* 
 .off-canvas-burger {
   position: fixed;
   bottom: 1rem;
@@ -1041,4 +1042,4 @@ Footer
 © 2023 GitHub, Inc.
 Footer navigation
 Terms
-Priva
+Priva */ */
