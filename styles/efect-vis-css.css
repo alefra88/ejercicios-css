@@ -1,3 +1,6 @@
+html{
+  overflow-x: hidden; /*para ocultar desbordamientos*/
+}
 /* haciendo sticky el header y dandole estilo a los anchor */
 .container-links {
   background-color: rebeccapurple;
@@ -700,7 +703,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
-/*
+/* LOADER */
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -721,6 +724,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   border-top-color: #09f;
   animation: spinner 1s ease-out infinite;
 }
+
 
 .btn {
   position: relative;
@@ -805,7 +809,6 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
 .tabs-menu label:hover {
   color: #fff;
 }
-
 .tabs-menu input[type="radio"]:checked + label {
   color: #fff;
 }
@@ -834,7 +837,9 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
 #tab-4:checked ~ .tab-bg-hover {
   transform: translateX(300%);
 }
-
+/*
+              M  E  N  U                  H  A  M  B  U  R  G  U  E  S  A
+ */
 .off-canvas-btn {
   position: fixed;
   bottom: 1rem;
@@ -843,10 +848,10 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   width: 3rem;
   height: 3rem;
   cursor: pointer;
-  /* opacity: 0.25; */
-  /* opacity: 0;
-} */
-/* 
+   /* opacity: 0.25;  */
+  opacity: 0;
+} 
+
 .off-canvas-burger {
   position: fixed;
   bottom: 1rem;
@@ -954,13 +959,13 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   align-items: center;
   background-color: #0008;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /*quita la interactividad del elemento*/
   transition: opacity 500ms ease-in-out;
 }
 
 .modal:target {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: auto; /*se ocupa para quitar la funcionalidad al darle opacidad al elemento*/
 }
 
 .modal-container {
@@ -998,7 +1003,7 @@ valores -> 'box-shadow: mov-x mov-y radius-blur spread-blur color inset/outset;'
   background-color: #a00;
   transform: scale(1.2);
 }
-
+/*
 @keyframes introStarWars {
   0% {
     transform: perspective(100vh) rotateX(15deg) translateY(100%);
@@ -1042,4 +1047,4 @@ Footer
 © 2023 GitHub, Inc.
 Footer navigation
 Terms
-Priva */ */
+Priva */ 
